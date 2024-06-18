@@ -366,6 +366,24 @@ body {
 .bento-page .grid .box-p .item.logo.logo-b {
   background: url(../img/item-bg-b.jpg);
 }
+.bento-page .grid .box-p .item.logo.logo-c {
+  background: url(../img/item-bg-c.jpg);
+}
+.bento-page .grid .box-p .item.logo.min {
+  gap: 16px;
+}
+.bento-page .grid .box-p .item.logo.min img {
+  height: 56px;
+  -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.12));
+          filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.12));
+}
+.bento-page .grid .box-p .item.logo.min .label {
+  padding: 8px 18px;
+  font-size: 16px;
+}
+.bento-page .grid .box-p .item.logo img {
+  height: 88px;
+}
 .bento-page .grid .box-p .item.logo .label {
   display: -webkit-box;
   display: -ms-flexbox;
