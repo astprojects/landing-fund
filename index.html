@@ -27,8 +27,10 @@
                 </a>
             </div>
             <div class="box-p">
-                <div class="item none">
-                </div>
+                <a href="https://t.me/today_monkey_bot" target="_blank" class="item monkey">
+                    <span class="label">Bibizyani</span>
+                    <img src="" id="randomImage" alt="Random Image">
+                </a>
             </div>
             <div class="box-p">
                 <div class="item none">
@@ -138,6 +140,26 @@
     </div>
 
     <script src="source/js/main.js"></script>
+
+    <script>
+        const images = [
+            'source/img/monkey/sticker.gif',
+            'source/img/monkey/sticker1.gif',
+            'source/img/monkey/sticker2.gif',
+            'source/img/monkey/sticker3.gif',
+            'source/img/monkey/sticker4.gif',
+            'source/img/monkey/sticker5.gif',
+            'source/img/monkey/sticker6.gif',
+            'source/img/monkey/sticker7.gif',
+            'source/img/monkey/sticker8.gif',
+        ];
+        function getRandomImage() {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            return images[randomIndex];
+        }
+        document.getElementById('randomImage').src = getRandomImage();
+    </script>
+
     <!-- <script>
         var item = document.querySelector(".mouseeffect");
 

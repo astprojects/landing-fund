@@ -88,6 +88,7 @@ body {
 .bento-page .grid .box-p {
   position: absolute;
   padding: 10px;
+  overflow: hidden;
 }
 .bento-page .grid .box-p:nth-child(1) {
   left: 0;
@@ -178,6 +179,50 @@ body {
 .bento-page .grid .box-p .item:hover {
   -webkit-transform: scale(1.005);
           transform: scale(1.005);
+}
+.bento-page .grid .box-p .item.monkey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.bento-page .grid .box-p .item.monkey span {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  border-top: 1px solid rgba(214, 214, 214, 0.4);
+  background: rgba(214, 214, 214, 0.24);
+  -webkit-box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.24);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  bottom: 24px;
+}
+.bento-page .grid .box-p .item.monkey img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .bento-page .grid .box-p .item.contacts {
   display: -webkit-box;
